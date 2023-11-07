@@ -25,5 +25,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             BoardgameSeeder::class
         ]);
+
+        $this->call([
+            AuthorSeeder::class
+        ]);
     }
 }
