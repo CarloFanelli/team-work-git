@@ -2,7 +2,8 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Cardgame;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -20,7 +21,10 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
-            ComicSeeder::class
+            ComicSeeder::class,
+           CardgameSeeder::class,
+            BoardgameSeeder::class,
+            AuthorSeeder::class
         ]);
     }
 }
