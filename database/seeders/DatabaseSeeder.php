@@ -22,5 +22,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             CardgameSeeder::class
         ]);
+        $this->call([
+            BoardgameSeeder::class
+        ]);
     }
 }
