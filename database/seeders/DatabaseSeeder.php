@@ -19,14 +19,11 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        $this->call([
-            CardgameSeeder::class
-        ]);
-        $this->call([
-            BoardgameSeeder::class
-        ]);
 
         $this->call([
+            ComicSeeder::class,
+           CardgameSeeder::class,
+            BoardgameSeeder::class,
             AuthorSeeder::class
         ]);
     }
